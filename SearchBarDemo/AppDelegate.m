@@ -5,8 +5,11 @@
 //  Created by 汪泽天 on 2017/7/19.
 //  Copyright © 2017年 霍. All rights reserved.
 //
+#define KGenericColor [UIColor colorWithRed:49/255.0 green:194/255.0 blue:124/255.0 alpha:1.0]
 
 #import "AppDelegate.h"
+#import "UIImage+ColorImage.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    ViewController *VC = [[ViewController alloc] init];
+    UINavigationController *Na = [[UINavigationController alloc] initWithRootViewController:VC];
+    Na.navigationBar.barStyle = UIBarStyleBlack;
+    //Na.navigationBar.clipsToBounds = YES;
+    //Na.navigationBar.barTintColor = RGB(255, 42, 89);
+    
+    [Na.navigationBar setBackgroundImage:[UIImage imageWithColor:KGenericColor]
+                          forBarPosition:UIBarPositionAny
+                              barMetrics:UIBarMetricsDefault];
+    [Na.navigationBar setShadowImage:[UIImage new]];
+    [Na.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:20]}];
+    self.window.rootViewController = Na;
+    
     return YES;
 }
 

@@ -16,6 +16,10 @@
 		9DC774261F1F2D5D00ED0C59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC774241F1F2D5D00ED0C59 /* LaunchScreen.storyboard */; };
 		9DC774311F1F2D5D00ED0C59 /* SearchBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC774301F1F2D5D00ED0C59 /* SearchBarDemoTests.m */; };
 		9DC7743C1F1F2D5D00ED0C59 /* SearchBarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7743B1F1F2D5D00ED0C59 /* SearchBarDemoUITests.m */; };
+		9DC7744C1F1F2E2E00ED0C59 /* UIImage+ColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7744B1F1F2E2E00ED0C59 /* UIImage+ColorImage.m */; };
+		9DC774521F1F2F3700ED0C59 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC774511F1F2F3700ED0C59 /* SearchViewController.m */; };
+		9DC774551F1F312100ED0C59 /* WMSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC774541F1F312100ED0C59 /* WMSearchBar.m */; };
+		9DC774581F1F34D900ED0C59 /* CustomSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC774571F1F34D900ED0C59 /* CustomSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		9DC774371F1F2D5D00ED0C59 /* SearchBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC7743B1F1F2D5D00ED0C59 /* SearchBarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBarDemoUITests.m; sourceTree = "<group>"; };
 		9DC7743D1F1F2D5D00ED0C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC7744A1F1F2E2E00ED0C59 /* UIImage+ColorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorImage.h"; sourceTree = "<group>"; };
+		9DC7744B1F1F2E2E00ED0C59 /* UIImage+ColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorImage.m"; sourceTree = "<group>"; };
+		9DC774501F1F2F3700ED0C59 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		9DC774511F1F2F3700ED0C59 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		9DC774531F1F312100ED0C59 /* WMSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSearchBar.h; sourceTree = "<group>"; };
+		9DC774541F1F312100ED0C59 /* WMSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSearchBar.m; sourceTree = "<group>"; };
+		9DC774561F1F34D900ED0C59 /* CustomSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSearchViewController.h; sourceTree = "<group>"; };
+		9DC774571F1F34D900ED0C59 /* CustomSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,10 @@
 		9DC774121F1F2D5D00ED0C59 /* SearchBarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9DC7744E1F1F2EE500ED0C59 /* Model */,
+				9DC7744F1F1F2EE500ED0C59 /* View */,
+				9DC7744D1F1F2EE500ED0C59 /* Controller */,
+				9DC774491F1F2E2300ED0C59 /* method */,
 				9DC774161F1F2D5D00ED0C59 /* AppDelegate.h */,
 				9DC774171F1F2D5D00ED0C59 /* AppDelegate.m */,
 				9DC774191F1F2D5D00ED0C59 /* ViewController.h */,
@@ -141,6 +157,42 @@
 				9DC7743D1F1F2D5D00ED0C59 /* Info.plist */,
 			);
 			path = SearchBarDemoUITests;
+			sourceTree = "<group>";
+		};
+		9DC774491F1F2E2300ED0C59 /* method */ = {
+			isa = PBXGroup;
+			children = (
+				9DC7744A1F1F2E2E00ED0C59 /* UIImage+ColorImage.h */,
+				9DC7744B1F1F2E2E00ED0C59 /* UIImage+ColorImage.m */,
+			);
+			path = method;
+			sourceTree = "<group>";
+		};
+		9DC7744D1F1F2EE500ED0C59 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DC774501F1F2F3700ED0C59 /* SearchViewController.h */,
+				9DC774511F1F2F3700ED0C59 /* SearchViewController.m */,
+				9DC774561F1F34D900ED0C59 /* CustomSearchViewController.h */,
+				9DC774571F1F34D900ED0C59 /* CustomSearchViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DC7744E1F1F2EE500ED0C59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DC7744F1F1F2EE500ED0C59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DC774531F1F312100ED0C59 /* WMSearchBar.h */,
+				9DC774541F1F312100ED0C59 /* WMSearchBar.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,10 +328,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC774551F1F312100ED0C59 /* WMSearchBar.m in Sources */,
+				9DC7744C1F1F2E2E00ED0C59 /* UIImage+ColorImage.m in Sources */,
 				9DC7741B1F1F2D5D00ED0C59 /* ViewController.m in Sources */,
 				9DC774181F1F2D5D00ED0C59 /* AppDelegate.m in Sources */,
 				9DC774211F1F2D5D00ED0C59 /* SearchBarDemo.xcdatamodeld in Sources */,
+				9DC774521F1F2F3700ED0C59 /* SearchViewController.m in Sources */,
 				9DC774151F1F2D5D00ED0C59 /* main.m in Sources */,
+				9DC774581F1F34D900ED0C59 /* CustomSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
